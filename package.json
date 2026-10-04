@@ -1,0 +1,26 @@
+{
+  "name": "sauce-tests",
+  "version": "1.0.0",
+  "description": "Test of sauce from claude code",
+  "scripts": {
+    "test": "playwright test",
+    "report": "playwright show-report",
+    "typecheck": "tsc --noEmit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pxdream-creator/sauce-tests.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pxdream-creator/sauce-tests/issues"
+  },
+  "homepage": "https://github.com/pxdream-creator/sauce-tests#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^26.6.4",
+    "typescript": "^7.0.2"
+  }
+}
