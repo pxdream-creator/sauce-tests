@@ -1,7 +1,7 @@
 # sauce-tests
 Test of sauce from claude code
 
-Playwright + TypeScript tests for https://www.saucedemo.com, implementing TC1–TC6 from `testcases.md` with the page object pattern.
+Playwright + TypeScript tests for https://www.saucedemo.com, implementing TC1–TC12 from `testcases.md` with the page object pattern.
 
 ```
 npm ci
