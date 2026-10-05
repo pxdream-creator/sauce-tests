@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/pxdream-creator/sauce-tests#readme",
   "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
     "@playwright/test": "^1.56.1",
     "@types/node": "^26.6.4",
     "typescript": "^7.0.2"
