@@ -50,9 +50,11 @@ for (const { user, error } of LOGIN_OUTCOMES) {
       await expect(loginPage.error).toContainText(error);
       await expect(page).toHaveURL('/');
     } else {
-      // performance_glitch_user takes about 5 seconds to log in.
-      await expect(page).toHaveURL(/\/inventory\.html$/, { timeout: 15_000 });
-      await expect(inventoryPage.items).toHaveCount(6);
+      // performance_glitch_user takes about 5 seconds to log in, and the
+      // product list can render after the URL has already changed.
+      const timeout = 15_000;
+      await expect(page).toHaveURL(/\/inventory\.html$/, { timeout });
+      await expect(inventoryPage.items).toHaveCount(6, { timeout });
     }
   });
 }
